@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MaxNation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/head.png">
+        <link rel="stylesheet" href="mypage.css">
+        <script src="mypage.js"></script>
+    </head>
+<body>
+    <header id=header>Worldwide Shipping</header>
+    <div class=logo-menu-icons>
+        <a href="mypage.html"><img src="images/favicon.png" id=logo></a>
+        <ul id=menu>
+            <li><a href="mypage.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+        <div class=icons>
+            <img src="images/icons/search.png" id="search" onclick="togglePopup('searchPopup')">
+            <div id="searchPopup" class="popup">
+                <input type="text" placeholder="Search for products..." class="search-input">
+                <button class="search-btn">Search</button>
+            </div>
+            <img src="images/icons/bag.png" id="bag" onclick="togglePopup('cartPopup')">
+            <div id="cartPopup" class="popup">
+                <h3>Your Cart</h3>
+                <p>No items in your cart.</p>
+            </div>
+        </div>
+    </div>
+    <div class=product>
+        <div class=pics>
+            <div id=main>
+                <img src="images/product/main.jpg" id=mainpic>
+            </div>
+            <div id=others>
+                <img src="images/product/main.jpg" id=pic0>
+                <img src="images/product/1.jpg" id=pic1>
+                <img src="images/product/2.jpg" id=pic2>
+                <img src="images/product/3.jpg" id=pic3>
+            </div>
+        </div>
+        <div class=desc>
+            <h1 id=pr>Smart Music Boxing Machine</h1>
+            <div id=reviews>
+                <img src="images/stars.png" id=stars>
+                <p id=par>(3266 reviews)</p>
+            </div>
+            <h2 id=desc>punch to your favorite tunes<br>feel the burn in every beat!</h2>
+            <div class=prices>
+                <p id="ofoldprice">€</p>
+                <span id=oldprice>135</span>
+                <p id="ofnewprice">€</p>
+                <span id=newprice>54</span>
+                <span id=discount>60%OFF</span>
+            </div>
+            <p id=quantity>quantity</p>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" class="quantity-input" value="1" name="inp"/>
+                <button class="increment">+</button>
+            </div>
+            <div><a id="purchase-button" href="pay.html">BUY NOW</a></div>
+            <div class="info">
+                <img src="images/icons/box.png" id=box>
+                <div class="container">
+                    <div class="collapsible-btn">
+                        <div>LEARN MORE ABOUT THE PRODUCT</div>
+                        <img src="images/icons/toggle.png" id=toggle>
+                    </div>
+                    <div class="horizontal-line"></div>
+                    <div class="collapsible-content">
+                    <p>
+                        <strong>Material</strong>: Durable ABS plastic<br>
+                        <strong>Size</strong>: Compact and wall-mounted 50-70cm<br>
+                        <strong>Weight</strong>: Lightweight, around 5-10kg<br>
+                        <strong>Display</strong>: built-in LED display<br>
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <div class="shipping">
+                <img src="images/icons/shipping.png" id=shipping>
+                <div class="container">
+                    <div class="collapsible-btn">
+                        <div id="ship">SHIPPING INFORMATION</div>
+                        <img src="images/icons/toggle.png" id=toggle1>
+                    </div>
+                    <div class="collapsible-content">
+                    <p>
+                        International Shipping<br>
+                        <strong>Description</strong>: Delivery to over 100 countries<br>
+                        <strong>shipping</strong>: within 7-14 business days<br>
+                        <strong>Cost</strong>: Rates calculated based on destination<br>
+                        <strong>Tracking</strong>: international tracking provided<br>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <ul id=benefits>
+            <div id="bens">
+                <img src="images/icons/del.png" id=del>
+                <li>Fast Delivery</li>
+            </div>
+            <div id="bens">
+                <img src="images/icons/ship.png" id=ship1>
+                <li>Package Protection</li>
+            </div>
+            <div id="bens">
+                <img src="images/icons/card.png" id=card>
+                <li>14-day Free Return</li>
+            </div>
+            <div id="bens">
+                <img src="images/icons/support.png" id=support>
+                <li>24/7 Email Support</li>
+            </div>
+        </ul>
+    </footer>
+</body>
+</html>

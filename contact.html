@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MaxNation</title>
+    <link rel="stylesheet" href="mypage.css">
+</head>
+<body>
+    <header id="header">Worldwide Shipping</header>
+
+    <div class="logo-menu-icons">
+        <a href="mypage.html"><img src="images/favicon.png" id=logo></a>
+        <ul id="menu">
+            <li><a href="mypage.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+        <div class=icons>
+            <img src="images/icons/search.png" id="search" onclick="togglePopup('searchPopup')">
+            <div id="searchPopup" class="popup">
+                <input type="text" placeholder="Search for products..." class="search-input">
+                <button class="search-btn">Search</button>
+            </div>
+            <img src="images/icons/bag.png" id="bag" onclick="togglePopup('cartPopup')">
+            <div id="cartPopup" class="popup">
+                <h3>Your Cart</h3>
+                <p>No items in your cart.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-content">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p>Have any questions? Feel free to reach out!</p>
+            
+            <form action="submit_form.php" method="post" class="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+<footer id="about-footer">
+    <p>&copy; 2025 MaxNation. All rights reserved.</p>
+</footer>
+</html>

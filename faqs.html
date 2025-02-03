@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - MaxNation</title>
+    <link rel="stylesheet" href="mypage.css">
+    <script src="mypage.js" defer></script>
+</head>
+<body>
+
+    <header id="header">Worldwide Shipping</header>
+
+    <div class="logo-menu-icons">
+        <a href="mypage.html"><img src="images/favicon.png" id=logo></a>
+        <ul id="menu">
+            <li><a href="mypage.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faqs.html" class="active">FAQs</a></li>
+        </ul>
+        <div class=icons>
+            <img src="images/icons/search.png" id="search" onclick="togglePopup('searchPopup')">
+            <div id="searchPopup" class="popup">
+                <input type="text" placeholder="Search for products..." class="search-input">
+                <button class="search-btn">Search</button>
+            </div>
+            <img src="images/icons/bag.png" id="bag" onclick="togglePopup('cartPopup')">
+            <div id="cartPopup" class="popup">
+                <h3>Your Cart</h3>
+                <p>No items in your cart.</p>
+            </div>
+        </div>
+    </div>
+    <div class="about-content">
+        <div class="faq-container">
+            <h1>Frequently Asked Questions</h1>
+
+            <div class="faq-item">
+                <div class="faq-question">📦 What is the shipping time?</div>
+                <div class="faq-answer">We ship internationally! Delivery typically takes 7-14 business days, depending on your location.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">💳 What payment methods do you accept?</div>
+                <div class="faq-answer">We accept credit/debit cards, PayPal, and Apple Pay. All transactions are secured.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">🔄 Can I return my order?</div>
+                <div class="faq-answer">Yes! We have a 14-day free return policy. Contact our support team for assistance.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">📞 How can I contact customer support?</div>
+                <div class="faq-answer">You can reach us via email at support@maxnation.com or through our Contact page.</div>
+            </div>
+        </div>
+    </div>
+    <footer id="about-footer">
+        <p>&copy; 2025 MaxNation. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
